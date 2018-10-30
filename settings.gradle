@@ -1,0 +1,5 @@
+include 'core'
+include 'entrypoint'
+include 'dataprovider'
+
+rootProject.name = 'jettison'

@@ -1,0 +1,26 @@
+plugins {
+	id 'java-library'
+	id 'eclipse'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testCompile 'org.junit.jupiter:junit-jupiter-params:5.3.1'
+    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}
+
+test {
+	useJUnitPlatform()
+	testLogging {
+		events 'passed', 'skipped', 'failed'
+	}
+}
+
+sourceCompatibility = '1.10'
+targetCompatibility = '1.10'
+
+version = '0.0.1'
